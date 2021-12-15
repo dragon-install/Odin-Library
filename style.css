@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  margin: 30px 0 50px 0;
+}
+
+span {
+  font-size: 25px;
+  color: red;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+}
+
+.alert {
+  display: none;
+  height: 30px;
+  width: 200px;
+  background: rgba(255, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.book-display {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background: black;
+  color: white;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.close-modal {
+  background: white;
+}
+
+.modal-content {
+  padding: 30px;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 30px;
+}
