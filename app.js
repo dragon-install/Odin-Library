@@ -10,20 +10,37 @@ const finished = document.querySelector('#options');
 const body = document.querySelector('body');
 const table = document.querySelector('table');
 
-function Book(author, title, pages, read) {
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.read = read;
-}
+// function Book(author, title, pages, read) {
+//   this.author = author;
+//   this.title = title;
+//   this.pages = pages;
+//   this.read = read;
+// }
 
-Book.prototype.toggleRead = function() {
-  if(this.read === 'Yes') {
-    return this.read = 'No';
-  } else if (this.read === 'No'){
-    return this.read = 'Yes';
+class Book {
+  constructor(author, title, pages, read) {
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.read = read;
+  }
+
+  toggleRead() {
+    if(this.read === 'Yes') {
+      return this.read = 'No';
+    } else if (this.read === 'No'){
+      return this.read = 'Yes';
+    }
   }
 }
+
+// Book.prototype.toggleRead = function() {
+//   if(this.read === 'Yes') {
+//     return this.read = 'No';
+//   } else if (this.read === 'No'){
+//     return this.read = 'Yes';
+//   }
+// }
 
 let myLibrary = [];
 
